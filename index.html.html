@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empresas Seguras | Prevención de Riesgos en Valdivia</title>
-  <link rel="canonical" href="https://empresasseguras.cl/"><!-- TODO: actualizar con dominio real -->
-  <meta name="description" content="Evita multas por el DS 44. Jaime González, prevencionista de riesgos en Valdivia — RIOHS, matrices de riesgo, capacitaciones y visitas a terreno para pymes.">
-  <meta property="og:title" content="Empresas Seguras | Prevención de Riesgos en Valdivia">
-  <meta property="og:description" content="Tu documentación preventiva en regla, sin tecnicismos. Jaime González, prevencionista de riesgos para pymes en Valdivia, Región de Los Ríos.">
+  <title>Gestión Sur | Prevención de Riesgos, Calidad y Medio Ambiente en Valdivia</title>
+  <link rel="canonical" href="https://gestionsur.cl/"><!-- TODO: actualizar con dominio real -->
+  <meta name="description" content="Evita multas por el DS 44. Gestión Sur — prevención de riesgos, calidad y medio ambiente para pymes en Valdivia. RIOHS, matrices de riesgo, capacitaciones y visitas a terreno.">
+  <meta property="og:title" content="Gestión Sur | Prevención de Riesgos en Valdivia">
+  <meta property="og:description" content="Tu documentación preventiva en regla, sin tecnicismos. Gestión Sur — prevención de riesgos, calidad y medio ambiente para pymes en Valdivia, Región de Los Ríos.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80">
   <meta property="og:locale" content="es_CL">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text y='72' x='50' text-anchor='middle' font-size='60' fill='%23f59e0b'>S</text></svg>">
+  <link rel="icon" id="favicon" href="logogestionsur.jpeg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Empresas Seguras",
-    "description": "Servicio de prevención de riesgos laborales para pymes en Valdivia, Chile. DS 44, RIOHS, matrices de riesgo, capacitaciones y visitas a terreno.",
+    "name": "Gestión Sur",
+    "description": "Prevención de riesgos, calidad y medio ambiente para pymes en Valdivia, Chile. DS 44, RIOHS, matrices de riesgo, capacitaciones y visitas a terreno.",
     "telephone": "+56942850178",
     "areaServed": [
       { "@type": "City", "name": "Valdivia" },
@@ -377,7 +377,7 @@
 
     /* ── PROBLEM ── */
     .problem {
-      background: linear-gradient(160deg, #f8fafc 60%, #fff7ed 100%);
+      background: linear-gradient(160deg, #e8edf5 0%, #deeae2 100%);
     }
 
     .problem-inner {
@@ -423,7 +423,7 @@
     .pain-card p  { font-size: .9375rem; color: var(--navy-600); line-height: 1.55; }
 
     /* ── SERVICES ── */
-    .services { background: var(--white); }
+    .services { background: linear-gradient(160deg, #eef3fb 0%, #e8f4ee 100%); }
 
     .services-header { text-align: center; margin-bottom: 56px; }
     .services-header .section-title { margin-top: 8px; }
@@ -437,7 +437,7 @@
     @media (min-width: 1024px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
 
     .service-card {
-      background: var(--slate-50);
+      background: var(--white);
       border-radius: var(--r-xl);
       padding: 32px 28px;
       border: 1px solid var(--slate-200);
@@ -657,6 +657,96 @@
       border-radius: 4px;
     }
 
+    /* ── COMPLIANCE BOX ── */
+    .compliance-box {
+      margin-top: 48px;
+      background: var(--navy);
+      border-radius: var(--r-xl);
+      padding: 40px;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .compliance-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .compliance-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245,158,11,.12);
+      border: 1px solid rgba(245,158,11,.25);
+      color: var(--yellow);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: var(--r-full);
+    }
+
+    .compliance-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -.015em;
+      margin-bottom: 6px;
+    }
+
+    .compliance-desc {
+      font-size: .9375rem;
+      color: rgba(255,255,255,.5);
+      line-height: 1.6;
+      margin-bottom: 32px;
+      max-width: 600px;
+    }
+
+    .compliance-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 640px)  { .compliance-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .compliance-item {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--r-lg);
+      padding: 22px 20px;
+      transition: background 220ms, border-color 220ms;
+    }
+    .compliance-item:hover {
+      background: rgba(255,255,255,.08);
+      border-color: rgba(245,158,11,.25);
+    }
+
+    .compliance-icon {
+      width: 40px; height: 40px;
+      border-radius: var(--r-sm);
+      background: rgba(245,158,11,.12);
+      border: 1px solid rgba(245,158,11,.2);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+    }
+    .compliance-icon svg { width: 20px; height: 20px; color: var(--yellow); }
+
+    .compliance-item h4 {
+      font-size: .9375rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 6px;
+      letter-spacing: -.01em;
+    }
+    .compliance-item p {
+      font-size: .875rem;
+      color: rgba(255,255,255,.55);
+      line-height: 1.6;
+    }
+
     /* ── RESPONSIVE ── */
 
     /* Tablet (< 1024px): texto antes que imagen en why-us */
@@ -684,6 +774,7 @@
 
       .services-header { margin-bottom: 40px; }
       .service-card    { padding: 24px 20px; }
+      .compliance-box  { padding: 28px 24px; margin-top: 32px; }
 
       .for-whom-header { margin-bottom: 36px; }
       .segment-card    { padding: 24px; }
@@ -714,6 +805,8 @@
 
       .service-card  { padding: 20px 16px; }
       .service-icon  { width: 44px; height: 44px; margin-bottom: 16px; }
+      .compliance-box { padding: 22px 16px; margin-top: 24px; }
+      .compliance-item { padding: 18px 16px; }
 
       .segment-card  { padding: 20px; }
       .segment-card h3 { font-size: 1.125rem; }
@@ -735,8 +828,8 @@
 <!-- ═══ NAVBAR ═══ -->
 <header class="navbar" id="navbar" role="banner">
   <div class="navbar-inner">
-    <a href="#" class="nav-logo" aria-label="Empresas Seguras — inicio">
-      Empresas <span>Seguras</span>
+    <a href="#" class="nav-logo" aria-label="Gestión Sur — inicio">
+      Gestión <span>Sur</span>
     </a>
 
     <nav class="nav-links" aria-label="Navegación principal">
@@ -819,7 +912,7 @@
       </div>
       <h1>Mantén tu empresa al día y <em>evita multas</em> por incumplimiento</h1>
       <p class="hero-sub">
-        Yo me encargo de que tu documentación esté en regla. Sin tecnicismos, sin vueltas — y sin que tengas que aprender normativa.
+        Nos encargamos de que tu documentación esté en regla. Sin tecnicismos, sin vueltas — y sin que tengas que aprender normativa.
       </p>
       <div class="hero-ctas">
         <a
@@ -875,7 +968,7 @@
           </div>
           <div>
             <h3>Falta de tiempo</h3>
-            <p>No tienes por qué volverte experto en normativa: para eso estoy yo.</p>
+            <p>No tienes por qué volverte experto en normativa: para eso estamos nosotros.</p>
           </div>
         </div>
       </div>
@@ -898,7 +991,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
         </div>
         <h3>Reglamento Interno (RIOHS)</h3>
-        <p>Lo preparo desde cero o actualizo el que tienes. Listo para que pase cualquier revisión de la Dirección del Trabajo o SEREMI.</p>
+        <p>Lo preparamos desde cero o actualizamos el que tienes. Listo para que pase cualquier revisión de la Dirección del Trabajo o SEREMI.</p>
       </div>
 
       <div class="service-card reveal d2">
@@ -930,7 +1023,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
         </div>
         <h3>Visitas a terreno</h3>
-        <p>Voy a tu empresa, reviso las condiciones reales y te digo qué hay que corregir antes de que llegue la fiscalización.</p>
+        <p>Vamos a tu empresa, revisamos las condiciones reales y te decimos qué hay que corregir antes de que llegue la fiscalización.</p>
       </div>
 
       <div class="service-card reveal d6">
@@ -942,6 +1035,54 @@
       </div>
 
     </div>
+
+    <!-- Recuadro normativa adicional -->
+    <div class="compliance-box reveal">
+      <div class="compliance-header">
+        <span class="compliance-tag">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><circle cx="5" cy="5" r="5"/></svg>
+          Normativa vigente
+        </span>
+      </div>
+      <h3 class="compliance-title">Cumplimiento legal completo</h3>
+      <p class="compliance-desc">Además del servicio base, nos encargamos de los requerimientos normativos más exigentes: los que más multas generan en fiscalización.</p>
+      <div class="compliance-grid">
+
+        <div class="compliance-item">
+          <div class="compliance-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h4>Decreto Supremo N°44</h4>
+          <p>Implementamos el sistema de gestión preventivo que exige el decreto: registros, procedimientos y documentación conforme a la normativa vigente desde 2024.</p>
+        </div>
+
+        <div class="compliance-item">
+          <div class="compliance-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/><path d="M9 12h6M9 16h4"/></svg>
+          </div>
+          <h4>Protocolos MINSAL</h4>
+          <p>PREXOR (ruido), TMERT, radiación UV, agentes químicos y riesgo psicosocial (ISTAS 21). Evaluamos y dejamos todo documentado según exige el Ministerio de Salud.</p>
+        </div>
+
+        <div class="compliance-item">
+          <div class="compliance-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+          </div>
+          <h4>Documentación de prevención</h4>
+          <p>Registros de accidentabilidad, investigaciones de accidentes, estadísticas e indicadores. Todo el respaldo documental que exige una fiscalización.</p>
+        </div>
+
+        <div class="compliance-item">
+          <div class="compliance-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          </div>
+          <h4>Procedimientos de trabajo seguro</h4>
+          <p>Instrucciones paso a paso para tareas de alto riesgo: trabajo en altura, espacios confinados, sustancias peligrosas y operación de maquinaria.</p>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -961,12 +1102,12 @@
       <div class="segment-card reveal d2">
         <div class="segment-num">Empresa mediana</div>
         <h3>Más personal, más faenas, más riesgo de multa</h3>
-        <p>Con más trabajadores el nivel de exigencia sube. Me hago cargo de la gestión completa: visitas periódicas, capacitaciones y toda la documentación al día.</p>
+        <p>Con más trabajadores el nivel de exigencia sube. Nos hacemos cargo de la gestión completa: visitas periódicas, capacitaciones y toda la documentación al día.</p>
       </div>
     </div>
     <p class="segments-note reveal d3">
       El precio depende del tamaño y rubro de tu empresa.<br>
-      Escríbeme y te armo una propuesta a tu medida.
+      Escríbenos y te armamos una propuesta a tu medida.
     </p>
   </div>
 </section>
@@ -986,7 +1127,7 @@
       </div>
 
       <div class="why-text">
-        <span class="section-label reveal">¿Por qué elegirme?</span>
+        <span class="section-label reveal">¿Por qué elegirnos?</span>
         <h2 class="section-title reveal d1" id="why-h2">Prevención local, directa y sin vueltas</h2>
         <div class="why-list">
 
@@ -996,7 +1137,7 @@
             </div>
             <div>
               <h3>Aquí en Valdivia</h3>
-              <p>Conozco la realidad de las empresas de la zona y voy a terreno. No soy una consultora de Santiago.</p>
+              <p>Conocemos la realidad de las empresas de la zona y vamos a terreno. No somos una consultora de Santiago.</p>
             </div>
           </div>
 
@@ -1006,7 +1147,7 @@
             </div>
             <div>
               <h3>Respuesta rápida</h3>
-              <p>Me escribes por WhatsApp y conversamos directo, sin call centers ni formularios interminables.</p>
+              <p>Nos escribes por WhatsApp y conversamos directo, sin call centers ni formularios interminables.</p>
             </div>
           </div>
 
@@ -1034,7 +1175,7 @@
       <span class="section-label reveal" style="color:var(--yellow);">Sin compromiso</span>
       <h2 class="section-title reveal d1" id="cta-h2">¿Tu empresa está al día?</h2>
       <p class="reveal d2">
-        Escríbeme por WhatsApp, cuéntame de tu empresa y te respondo ese mismo día con lo que necesitas.
+        Escríbenos por WhatsApp, cuéntanos de tu empresa y te armamos una propuesta ese mismo día.
       </p>
       <a
         href="https://wa.me/56942850178?text=Hola%20Jaime%2C%20quiero%20cotizar%20la%20prevenci%C3%B3n%20de%20riesgos%20para%20mi%20empresa"
@@ -1043,7 +1184,7 @@
         aria-label="Escribir a Jaime González por WhatsApp"
       >
         <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Escríbeme por WhatsApp
+        Escríbenos por WhatsApp
       </a>
     </div>
   </div>
@@ -1056,8 +1197,8 @@
   <div class="container">
     <div class="footer-inner">
       <div>
-        <div class="footer-brand">Empresas <span>Seguras</span> — Prevención de riesgos laborales · Valdivia, Chile</div>
-        <div class="footer-sub">Jaime González · Prevencionista de Riesgos · <span id="yr"></span></div>
+        <div class="footer-brand">Gestión <span>Sur</span> — Prevención de Riesgos, Calidad y Medio Ambiente · Valdivia, Chile</div>
+        <div class="footer-sub">Jaime González · Prev. de Riesgos, Calidad y Ambiente · <span id="yr"></span></div>
         <div class="footer-credit">Diseñado por <a href="https://nvystudioss.vercel.app" target="_blank" rel="noopener noreferrer">Nvy Studios</a></div>
       </div>
       <a
@@ -1127,7 +1268,22 @@
 
   /* ── Footer year ── */
   document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ── Favicon: recorta solo el ícono circular, sin el texto ── */
+  (function() {
+    const canvas = document.createElement('canvas');
+    canvas.width = 64; canvas.height = 64;
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+    img.onload = function() {
+      const cropH = img.naturalWidth * 0.57; // top 57% = solo el ícono
+      ctx.drawImage(img, 0, 0, img.naturalWidth, cropH, 0, 0, 64, 64);
+      document.getElementById('favicon').href = canvas.toDataURL('image/png');
+    };
+    img.src = 'logogestionsur.jpeg';
+  })();
 </script>
 
 </body>
 </html>
+
