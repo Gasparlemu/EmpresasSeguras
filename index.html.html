@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresas Seguras | Prevención de Riesgos en Valdivia</title>
+  <link rel="canonical" href="https://empresasseguras.cl/"><!-- TODO: actualizar con dominio real -->
+  <meta name="description" content="Evita multas por el DS 44. Jaime González, prevencionista de riesgos en Valdivia — RIOHS, matrices de riesgo, capacitaciones y visitas a terreno para pymes.">
+  <meta property="og:title" content="Empresas Seguras | Prevención de Riesgos en Valdivia">
+  <meta property="og:description" content="Tu documentación preventiva en regla, sin tecnicismos. Jaime González, prevencionista de riesgos para pymes en Valdivia, Región de Los Ríos.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text y='72' x='50' text-anchor='middle' font-size='60' fill='%23f59e0b'>S</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Empresas Seguras",
+    "description": "Servicio de prevención de riesgos laborales para pymes en Valdivia, Chile. DS 44, RIOHS, matrices de riesgo, capacitaciones y visitas a terreno.",
+    "telephone": "+56942850178",
+    "areaServed": [
+      { "@type": "City", "name": "Valdivia" },
+      { "@type": "AdministrativeArea", "name": "Región de Los Ríos" }
+    ],
+    "serviceType": "Prevención de Riesgos Laborales",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Valdivia",
+      "addressRegion": "Región de Los Ríos",
+      "addressCountry": "CL"
+    },
+    "employee": {
+      "@type": "Person",
+      "name": "Jaime González",
+      "jobTitle": "Prevencionista de Riesgos"
+    }
+  }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    /* ── TOKENS ── */
+    :root {
+      --navy:          #0f172a;
+      --navy-800:      #1e293b;
+      --navy-700:      #334155;
+      --navy-600:      #475569;
+      --slate-400:     #94a3b8;
+      --slate-200:     #e2e8f0;
+      --slate-100:     #f1f5f9;
+      --slate-50:      #f8fafc;
+      --white:         #ffffff;
+      --yellow:        #f59e0b;
+      --yellow-hover:  #d97706;
+      --yellow-light:  #fef3c7;
+
+      --font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      --r-sm:   8px;
+      --r-md:   12px;
+      --r-lg:   16px;
+      --r-xl:   24px;
+      --r-full: 9999px;
+
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.04);
+      --shadow-lg: 0 8px 32px rgba(0,0,0,.12), 0 4px 12px rgba(0,0,0,.06);
+
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--navy);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; height: auto; }
+    a   { color: inherit; text-decoration: none; }
+    ul  { list-style: none; }
+
+    /* ── LAYOUT ── */
+    .container {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    @media (min-width: 768px)  { .container { padding: 0 32px; } }
+    @media (min-width: 1024px) { .container { padding: 0 48px; } }
+
+    /* ── NAVBAR ── */
+    .navbar {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      width: calc(100% - 32px);
+      max-width: 980px;
+      background: rgba(15, 23, 42, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 16px;
+      transition: background 300ms var(--ease-out), border-color 300ms, box-shadow 300ms, border-radius 250ms var(--ease-out);
+    }
+
+    .navbar.scrolled {
+      background: rgba(15, 23, 42, 0.96);
+      border-color: rgba(255,255,255,0.14);
+      box-shadow: 0 8px 40px rgba(0,0,0,.28), 0 2px 8px rgba(0,0,0,.18);
+    }
+
+    .navbar.open { border-radius: 16px 16px 10px 10px; }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 18px;
+      gap: 8px;
+    }
+
+    .nav-logo {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      flex-shrink: 0;
+    }
+    .nav-logo span { color: var(--yellow); }
+
+    /* Desktop links */
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 2px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @media (min-width: 768px) { .nav-links { display: flex; } }
+
+    .nav-link {
+      color: rgba(255,255,255,.65);
+      font-size: .875rem;
+      font-weight: 500;
+      padding: 7px 13px;
+      border-radius: var(--r-full);
+      transition: color 180ms, background 180ms;
+      white-space: nowrap;
+    }
+    .nav-link:hover { color: var(--white); background: rgba(255,255,255,.09); }
+
+    /* Right actions */
+    .nav-actions { display: flex; align-items: center; gap: 8px; }
+
+    /* Hamburger */
+    .nav-burger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px; height: 38px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--r-sm);
+      cursor: pointer;
+      color: var(--white);
+      transition: background 200ms;
+      flex-shrink: 0;
+    }
+    .nav-burger:hover { background: rgba(255,255,255,.13); }
+    @media (min-width: 768px) { .nav-burger { display: none; } }
+
+    .icon-x { display: none; }
+
+    /* Mobile dropdown */
+    .nav-mobile {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 360ms var(--ease-out), opacity 280ms;
+    }
+    .nav-mobile.open {
+      max-height: 400px;
+      opacity: 1;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav-mobile-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 12px 16px 16px;
+    }
+
+    .nav-mobile-link {
+      color: rgba(255,255,255,.72);
+      font-size: .9375rem;
+      font-weight: 500;
+      padding: 10px 14px;
+      border-radius: var(--r-md);
+      transition: color 180ms, background 180ms;
+    }
+    .nav-mobile-link:hover { color: var(--white); background: rgba(255,255,255,.07); }
+
+    .nav-mobile-cta { margin-top: 8px; }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: var(--r-full);
+      font-family: var(--font);
+      font-size: .9375rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: transform 200ms var(--ease-out), box-shadow 200ms, background 200ms;
+      white-space: nowrap;
+    }
+    .btn:hover  { transform: translateY(-2px); }
+    .btn:active { transform: scale(0.97) translateY(0); transition-duration: 80ms; }
+
+    .btn-yellow {
+      background: var(--yellow);
+      color: var(--navy);
+      box-shadow: 0 2px 8px rgba(245,158,11,.35);
+    }
+    .btn-yellow:hover {
+      background: var(--yellow-hover);
+      box-shadow: 0 6px 20px rgba(245,158,11,.45);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,.55);
+    }
+    .btn-outline:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,.08);
+    }
+
+    .btn-sm { padding: 10px 18px; font-size: .875rem; }
+    .btn-lg { padding: 16px 30px; font-size: 1.0625rem; }
+
+    .icon-wa { width: 18px; height: 18px; flex-shrink: 0; }
+
+    /* Navbar btn: colapsa a ícono en mobile */
+    @media (max-width: 479px) {
+      .nav-btn-text { display: none; }
+      .btn.btn-sm   { padding: 10px 12px; }
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      padding: 160px 0 80px;
+      overflow: hidden;
+    }
+
+    .hero-bg { position: absolute; inset: 0; z-index: 0; }
+    .hero-bg img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+    }
+
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg,
+        rgba(15,23,42,.92) 0%,
+        rgba(15,23,42,.74) 55%,
+        rgba(15,23,42,.48) 100%
+      );
+    }
+
+    .hero .container { position: relative; z-index: 1; }
+    .hero-content    { max-width: 680px; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245,158,11,.14);
+      border: 1px solid rgba(245,158,11,.32);
+      color: var(--yellow);
+      font-size: .8125rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: var(--r-full);
+      margin-bottom: 24px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .hero-badge-dot {
+      width: 7px; height: 7px;
+      background: var(--yellow);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%,100% { opacity: 1; }
+      50%      { opacity: .4; }
+    }
+
+    .hero h1 {
+      font-size: clamp(1.75rem, 6vw, 3.375rem);
+      font-weight: 800;
+      line-height: 1.13;
+      letter-spacing: -.035em;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .hero h1 em { font-style: normal; color: var(--yellow); }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2.2vw, 1.125rem);
+      color: rgba(255,255,255,.8);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 560px;
+    }
+
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    /* ── SECTION COMMONS ── */
+    section { padding: 88px 0; }
+    @media (min-width: 768px) { section { padding: 112px 0; } }
+
+    .section-label {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--yellow-hover);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(1.625rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -.028em;
+      line-height: 1.18;
+      color: var(--navy);
+    }
+
+    .section-body {
+      font-size: 1.0625rem;
+      line-height: 1.72;
+      color: var(--navy-600);
+    }
+
+    /* ── PROBLEM ── */
+    .problem {
+      background: linear-gradient(160deg, #f8fafc 60%, #fff7ed 100%);
+    }
+
+    .problem-inner {
+      display: grid;
+      gap: 56px;
+    }
+    @media (min-width: 1024px) {
+      .problem-inner {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 80px;
+      }
+    }
+
+    .problem-text .section-title { margin-bottom: 16px; }
+    .problem-text .section-body  { margin-top: 16px; max-width: 520px; }
+
+    .pain-cards { display: flex; flex-direction: column; gap: 16px; }
+
+    .pain-card {
+      background: var(--white);
+      border-radius: var(--r-lg);
+      padding: 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--yellow);
+      transition: box-shadow 250ms var(--ease-out), transform 250ms var(--ease-out);
+    }
+    .pain-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+    .pain-icon {
+      width: 44px; height: 44px;
+      border-radius: var(--r-md);
+      background: var(--yellow-light);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .pain-icon svg { width: 22px; height: 22px; color: var(--yellow-hover); }
+
+    .pain-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .pain-card p  { font-size: .9375rem; color: var(--navy-600); line-height: 1.55; }
+
+    /* ── SERVICES ── */
+    .services { background: var(--white); }
+
+    .services-header { text-align: center; margin-bottom: 56px; }
+    .services-header .section-title { margin-top: 8px; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 640px)  { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    .service-card {
+      background: var(--slate-50);
+      border-radius: var(--r-xl);
+      padding: 32px 28px;
+      border: 1px solid var(--slate-200);
+      box-shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04), inset 3px 0 0 transparent;
+      transition: box-shadow 250ms var(--ease-out), transform 250ms var(--ease-out), border-color 250ms;
+    }
+    .service-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,.12), 0 4px 12px rgba(0,0,0,.06), inset 3px 0 0 var(--yellow);
+      transform: translateY(-4px);
+      border-color: rgba(245,158,11,.3);
+    }
+
+    .service-icon {
+      width: 52px; height: 52px;
+      border-radius: var(--r-md);
+      background: linear-gradient(140deg, var(--navy) 0%, var(--navy-800) 100%);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+    }
+    .service-icon svg { width: 26px; height: 26px; color: var(--yellow); }
+
+    .service-card h3 {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      letter-spacing: -.01em;
+      margin-bottom: 8px;
+    }
+    .service-card p { font-size: .9375rem; color: var(--navy-600); line-height: 1.6; }
+
+    /* ── FOR WHOM ── */
+    .for-whom { background: var(--navy); }
+    .for-whom .section-label { color: var(--yellow); }
+    .for-whom .section-title { color: var(--white); }
+    .for-whom-header { text-align: center; margin-bottom: 48px; }
+    .for-whom-header .section-title { margin-top: 8px; }
+
+    .segments-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    @media (min-width: 768px) { .segments-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .segment-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: var(--r-xl);
+      padding: 36px;
+      transition: background 250ms, border-color 250ms, transform 250ms var(--ease-out);
+    }
+    .segment-card:hover {
+      background: rgba(255,255,255,.09);
+      border-color: rgba(245,158,11,.4);
+      transform: translateY(-3px);
+    }
+
+    .segment-num {
+      font-size: .8125rem;
+      font-weight: 700;
+      color: var(--yellow);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .segment-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -.015em;
+      margin-bottom: 12px;
+    }
+    .segment-card p { font-size: .9375rem; color: rgba(255,255,255,.68); line-height: 1.65; }
+
+    .segments-note {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1rem;
+      color: rgba(255,255,255,.55);
+      line-height: 1.7;
+    }
+
+    /* ── WHY US ── */
+    .why-us {
+      background-color: #f8fafc;
+      background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    .why-inner {
+      display: grid;
+      gap: 56px;
+    }
+    @media (min-width: 1024px) {
+      .why-inner {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 80px;
+      }
+    }
+
+    .why-img {
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4/3;
+    }
+    .why-img img { width: 100%; height: 100%; object-fit: cover; }
+
+    .why-text .section-title { margin: 8px 0 32px; }
+
+    .why-list { display: flex; flex-direction: column; gap: 24px; }
+
+    .why-item { display: flex; gap: 16px; align-items: flex-start; }
+
+    .why-dot {
+      width: 38px; height: 38px;
+      border-radius: var(--r-sm);
+      background: var(--yellow);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .why-dot svg { width: 18px; height: 18px; color: var(--navy); }
+
+    .why-item h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .why-item p  { font-size: .9375rem; color: var(--navy-600); line-height: 1.55; }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(140deg, var(--navy) 0%, #162032 100%);
+      padding: 96px 0;
+    }
+
+    .cta-inner { position: relative; z-index: 1; text-align: center; max-width: 600px; margin: 0 auto; }
+    .cta-inner .section-title { color: var(--white); margin-top: 8px; margin-bottom: 16px; }
+    .cta-inner p {
+      font-size: 1.0625rem;
+      color: rgba(255,255,255,.68);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,.07);
+      padding: 40px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .footer-inner { flex-direction: row; justify-content: space-between; text-align: left; }
+    }
+
+    .footer-brand { font-size: .9375rem; font-weight: 600; color: var(--white); }
+    .footer-brand span { color: var(--yellow); }
+    .footer-sub { font-size: .8125rem; color: rgba(255,255,255,.38); margin-top: 4px; }
+    .footer-credit {
+      font-size: .75rem;
+      color: rgba(255,255,255,.22);
+      margin-top: 6px;
+    }
+    .footer-credit a {
+      color: rgba(255,255,255,.35);
+      transition: color 200ms;
+    }
+    .footer-credit a:hover { color: var(--yellow); }
+
+    .footer-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,.65);
+      font-size: .9375rem;
+      font-weight: 500;
+      transition: color 200ms;
+    }
+    .footer-wa:hover { color: var(--yellow); }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 640ms var(--ease-out), transform 640ms var(--ease-out);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    .d1 { transition-delay:  60ms; }
+    .d2 { transition-delay: 130ms; }
+    .d3 { transition-delay: 210ms; }
+    .d4 { transition-delay: 300ms; }
+    .d5 { transition-delay: 400ms; }
+    .d6 { transition-delay: 510ms; }
+
+    /* ── REDUCED MOTION ── */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal          { opacity: 1; transform: none; transition: none; }
+      .btn             { transition: none; }
+      .pain-card,
+      .service-card,
+      .segment-card    { transition: none; }
+      .navbar          { transition: none; }
+      .hero-badge-dot  { animation: none; }
+    }
+
+    /* ── FOCUS ── */
+    :focus-visible {
+      outline: 2px solid var(--yellow);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* ── RESPONSIVE ── */
+
+    /* Tablet (< 1024px): texto antes que imagen en why-us */
+    @media (max-width: 1023px) {
+      .why-img  { order: 2; aspect-ratio: 16/9; }
+      .why-text { order: 1; }
+    }
+
+    /* Mobile (< 768px) */
+    @media (max-width: 767px) {
+      section { padding: 64px 0; }
+
+      .hero { padding: 108px 0 56px; }
+      .hero-ctas {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .hero-ctas .btn {
+        width: 100%;
+        justify-content: center;
+      }
+      .hero-sub { max-width: 100%; }
+
+      .problem-text .section-body { max-width: 100%; }
+
+      .services-header { margin-bottom: 40px; }
+      .service-card    { padding: 24px 20px; }
+
+      .for-whom-header { margin-bottom: 36px; }
+      .segment-card    { padding: 24px; }
+      .segments-note   { margin-top: 32px; }
+
+      .why-list    { gap: 20px; }
+      .why-inner   { gap: 40px; }
+
+      .cta-band    { padding: 64px 0; }
+      .cta-inner p { font-size: 1rem; }
+
+      .footer-brand { font-size: .875rem; line-height: 1.55; }
+    }
+
+    /* Small mobile (< 480px) */
+    @media (max-width: 479px) {
+      .navbar     { width: calc(100% - 24px); }
+      .nav-btn-text { display: none; }
+      .btn.btn-sm   { padding: 10px 12px; }
+
+      .hero       { padding: 96px 0 48px; }
+      .hero-badge { font-size: .75rem; padding: 5px 10px; margin-bottom: 18px; }
+      .hero h1    { letter-spacing: -.02em; margin-bottom: 16px; }
+      .hero-sub   { margin-bottom: 28px; }
+
+      .pain-card  { padding: 16px; gap: 12px; }
+      .pain-icon  { width: 38px; height: 38px; }
+
+      .service-card  { padding: 20px 16px; }
+      .service-icon  { width: 44px; height: 44px; margin-bottom: 16px; }
+
+      .segment-card  { padding: 20px; }
+      .segment-card h3 { font-size: 1.125rem; }
+
+      .why-img    { aspect-ratio: 4/3; }
+      .why-dot    { width: 34px; height: 34px; }
+
+      .cta-band   { padding: 56px 0; }
+      .cta-inner .btn-lg { padding: 14px 24px; font-size: 1rem; }
+
+      .footer     { padding: 32px 0; }
+      .footer-sub { font-size: .75rem; }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<header class="navbar" id="navbar" role="banner">
+  <div class="navbar-inner">
+    <a href="#" class="nav-logo" aria-label="Empresas Seguras — inicio">
+      Empresas <span>Seguras</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#problema" class="nav-link">El problema</a>
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#para-quien" class="nav-link">¿Para quién?</a>
+      <a href="#por-que" class="nav-link">Nosotros</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a
+        href="https://wa.me/56942850178?text=Hola%20Jaime%2C%20quiero%20cotizar%20la%20prevenci%C3%B3n%20de%20riesgos%20para%20mi%20empresa"
+        class="btn btn-yellow btn-sm"
+        target="_blank" rel="noopener noreferrer"
+        aria-label="Cotizar por WhatsApp con Jaime González"
+      >
+        <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="nav-btn-text">Cotizar ahora</span>
+      </a>
+      <button
+        class="nav-burger"
+        id="nav-burger"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-mobile"
+      >
+        <svg class="icon-ham" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        <svg class="icon-x" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+    <div class="nav-mobile-inner">
+      <a href="#problema"   class="nav-mobile-link">El problema</a>
+      <a href="#servicios"  class="nav-mobile-link">Servicios</a>
+      <a href="#para-quien" class="nav-mobile-link">¿Para quién?</a>
+      <a href="#por-que"    class="nav-mobile-link">Nosotros</a>
+      <div class="nav-mobile-cta">
+        <a
+          href="https://wa.me/56942850178?text=Hola%20Jaime%2C%20quiero%20cotizar%20la%20prevenci%C3%B3n%20de%20riesgos%20para%20mi%20empresa"
+          class="btn btn-yellow"
+          target="_blank" rel="noopener noreferrer"
+          style="width:100%; justify-content:center;"
+        >
+          <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Cotizar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" aria-label="Presentación">
+  <div class="hero-bg">
+    <img
+      src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80&fm=webp"
+      alt="Trabajadores con cascos y chalecos reflectantes en faena de construcción"
+      width="1600" height="900"
+      fetchpriority="high"
+    >
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        DS 44 vigente desde 2024
+      </div>
+      <h1>Mantén tu empresa al día y <em>evita multas</em> por incumplimiento</h1>
+      <p class="hero-sub">
+        Yo me encargo de que tu documentación esté en regla. Sin tecnicismos, sin vueltas — y sin que tengas que aprender normativa.
+      </p>
+      <div class="hero-ctas">
+        <a
+          href="https://wa.me/56942850178?text=Hola%20Jaime%2C%20quiero%20cotizar%20la%20prevenci%C3%B3n%20de%20riesgos%20para%20mi%20empresa"
+          class="btn btn-yellow btn-lg"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Cotizar prevención de riesgos por WhatsApp"
+        >
+          <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Cotizar por WhatsApp
+        </a>
+        <a href="#servicios" class="btn btn-outline btn-lg">Ver servicios</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROBLEM ═══ -->
+<section class="problem" id="problema" aria-labelledby="problem-h2">
+  <div class="container">
+    <div class="problem-inner">
+
+      <div class="problem-text">
+        <span class="section-label reveal">Urgente</span>
+        <h2 class="section-title reveal d1" id="problem-h2">La fiscalización ya no avisa</h2>
+        <p class="section-body reveal d2">
+          Desde agosto de 2024 rige el DS 44, que endurece las obligaciones de prevención de riesgos. La Inspección del Trabajo y la SEREMI de Salud fiscalizan sin previo aviso y multan a las empresas que no tienen su documentación al día. La mayoría de las pymes todavía no se ha puesto al día.
+        </p>
+      </div>
+
+      <div class="pain-cards">
+        <div class="pain-card reveal d1">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+          </div>
+          <div>
+            <h3>Multas que se pueden evitar</h3>
+            <p>Una sola fiscalización mal parada cuesta mucho más que tener todo en orden.</p>
+          </div>
+        </div>
+        <div class="pain-card reveal d2">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <div>
+            <h3>Documentación desactualizada</h3>
+            <p>Reglamentos vencidos o que nunca se hicieron bien son un riesgo real.</p>
+          </div>
+        </div>
+        <div class="pain-card reveal d3">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h3>Falta de tiempo</h3>
+            <p>No tienes por qué volverte experto en normativa: para eso estoy yo.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="services" id="servicios" aria-labelledby="services-h2">
+  <div class="container">
+    <div class="services-header">
+      <span class="section-label reveal">Servicios</span>
+      <h2 class="section-title reveal d1" id="services-h2">Todo lo que tu empresa necesita para estar en regla</h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal d1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <h3>Reglamento Interno (RIOHS)</h3>
+        <p>Lo preparo desde cero o actualizo el que tienes. Listo para que pase cualquier revisión de la Dirección del Trabajo o SEREMI.</p>
+      </div>
+
+      <div class="service-card reveal d2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <h3>Matrices de riesgo</h3>
+        <p>Miramos juntos qué puede fallar en tu operación y lo dejamos documentado con las medidas correctas. Nada improvisado.</p>
+      </div>
+
+      <div class="service-card reveal d3">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <h3>Capacitaciones</h3>
+        <p>Charlas prácticas para tus trabajadores: qué riesgos tienen en su puesto y cómo cuidarse. Asistencia documentada.</p>
+      </div>
+
+      <div class="service-card reveal d4">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+        </div>
+        <h3>Inducciones</h3>
+        <p>Cada trabajador nuevo que entre a tu empresa lo inducimos en seguridad. Queda registrado y firmado.</p>
+      </div>
+
+      <div class="service-card reveal d5">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+        </div>
+        <h3>Visitas a terreno</h3>
+        <p>Voy a tu empresa, reviso las condiciones reales y te digo qué hay que corregir antes de que llegue la fiscalización.</p>
+      </div>
+
+      <div class="service-card reveal d6">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+        <h3>Planes de emergencia</h3>
+        <p>Protocolo ante incendio, sismo o emergencia médica. Tu equipo sabe qué hacer y tú tienes el papel que lo respalda.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOR WHOM ═══ -->
+<section class="for-whom" id="para-quien" aria-labelledby="forwhom-h2">
+  <div class="container">
+    <div class="for-whom-header">
+      <span class="section-label reveal">¿Para quién?</span>
+      <h2 class="section-title reveal d1" id="forwhom-h2">Una solución a la medida de tu empresa</h2>
+    </div>
+    <div class="segments-grid">
+      <div class="segment-card reveal d1">
+        <div class="segment-num">Empresa pequeña</div>
+        <h3>Pocos trabajadores, sin nadie que se encargue de esto</h3>
+        <p>La mayoría de las pymes chicas no tiene nada en regla. Armamos lo esencial para que si llega una fiscalización, no te agarren desprevenido.</p>
+      </div>
+      <div class="segment-card reveal d2">
+        <div class="segment-num">Empresa mediana</div>
+        <h3>Más personal, más faenas, más riesgo de multa</h3>
+        <p>Con más trabajadores el nivel de exigencia sube. Me hago cargo de la gestión completa: visitas periódicas, capacitaciones y toda la documentación al día.</p>
+      </div>
+    </div>
+    <p class="segments-note reveal d3">
+      El precio depende del tamaño y rubro de tu empresa.<br>
+      Escríbeme y te armo una propuesta a tu medida.
+    </p>
+  </div>
+</section>
+
+<!-- ═══ WHY US ═══ -->
+<section class="why-us" id="por-que" aria-labelledby="why-h2">
+  <div class="container">
+    <div class="why-inner">
+
+      <div class="why-img reveal">
+        <img
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=80&fm=webp"
+          alt="Profesional de prevención de riesgos revisando condiciones de seguridad en empresa"
+          width="900" height="675"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="why-text">
+        <span class="section-label reveal">¿Por qué elegirme?</span>
+        <h2 class="section-title reveal d1" id="why-h2">Prevención local, directa y sin vueltas</h2>
+        <div class="why-list">
+
+          <div class="why-item reveal d2">
+            <div class="why-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+            </div>
+            <div>
+              <h3>Aquí en Valdivia</h3>
+              <p>Conozco la realidad de las empresas de la zona y voy a terreno. No soy una consultora de Santiago.</p>
+            </div>
+          </div>
+
+          <div class="why-item reveal d3">
+            <div class="why-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <div>
+              <h3>Respuesta rápida</h3>
+              <p>Me escribes por WhatsApp y conversamos directo, sin call centers ni formularios interminables.</p>
+            </div>
+          </div>
+
+          <div class="why-item reveal d4">
+            <div class="why-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <h3>Te explico en simple</h3>
+              <p>Nada de tecnicismos. Te digo exactamente qué necesitas y cuánto cuesta, sin letra chica.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BAND ═══ -->
+<section class="cta-band" aria-labelledby="cta-h2">
+  <div class="container">
+    <div class="cta-inner">
+      <span class="section-label reveal" style="color:var(--yellow);">Sin compromiso</span>
+      <h2 class="section-title reveal d1" id="cta-h2">¿Tu empresa está al día?</h2>
+      <p class="reveal d2">
+        Escríbeme por WhatsApp, cuéntame de tu empresa y te respondo ese mismo día con lo que necesitas.
+      </p>
+      <a
+        href="https://wa.me/56942850178?text=Hola%20Jaime%2C%20quiero%20cotizar%20la%20prevenci%C3%B3n%20de%20riesgos%20para%20mi%20empresa"
+        class="btn btn-yellow btn-lg reveal d3"
+        target="_blank" rel="noopener noreferrer"
+        aria-label="Escribir a Jaime González por WhatsApp"
+      >
+        <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escríbeme por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Empresas <span>Seguras</span> — Prevención de riesgos laborales · Valdivia, Chile</div>
+        <div class="footer-sub">Jaime González · Prevencionista de Riesgos · <span id="yr"></span></div>
+        <div class="footer-credit">Diseñado por <a href="https://nvystudioss.vercel.app" target="_blank" rel="noopener noreferrer">Nvy Studios</a></div>
+      </div>
+      <a
+        href="https://wa.me/56942850178?text=Hola%20Jaime%2C%20quiero%20cotizar%20la%20prevenci%C3%B3n%20de%20riesgos%20para%20mi%20empresa"
+        class="footer-wa"
+        target="_blank" rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp +56 9 4285 0178"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        +56 9 4285 0178
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav    = document.getElementById('navbar');
+  const burger = document.getElementById('nav-burger');
+  const mobile = document.getElementById('nav-mobile');
+  const iconHam = burger.querySelector('.icon-ham');
+  const iconX   = burger.querySelector('.icon-x');
+
+  /* ── Navbar scroll ── */
+  let tick = false;
+  window.addEventListener('scroll', () => {
+    if (!tick) {
+      requestAnimationFrame(() => {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
+        tick = false;
+      });
+      tick = true;
+    }
+  }, { passive: true });
+
+  /* ── Mobile menu ── */
+  function openMenu() {
+    mobile.classList.add('open');
+    nav.classList.add('open');
+    burger.setAttribute('aria-expanded', 'true');
+    mobile.setAttribute('aria-hidden', 'false');
+    iconHam.style.display = 'none';
+    iconX.style.display   = 'block';
+  }
+  function closeMenu() {
+    mobile.classList.remove('open');
+    nav.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    mobile.setAttribute('aria-hidden', 'true');
+    iconHam.style.display = 'block';
+    iconX.style.display   = 'none';
+  }
+
+  burger.addEventListener('click', () => {
+    mobile.classList.contains('open') ? closeMenu() : openMenu();
+  });
+
+  mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+  /* ── Scroll reveal ── */
+  const io = new IntersectionObserver(
+    entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    }),
+    { threshold: 0.08, rootMargin: '0px 0px -24px 0px' }
+  );
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* ── Footer year ── */
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
