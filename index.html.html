@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestión Sur | Prevención de Riesgos, Calidad y Medio Ambiente en Valdivia</title>
+  <title>Gestión Sur | Prevención de Riesgos, Calidad y Ambiente en Valdivia</title>
   <link rel="canonical" href="https://gestionsur.cl/"><!-- TODO: actualizar con dominio real -->
-  <meta name="description" content="Evita multas por el DS 44. Gestión Sur — prevención de riesgos, calidad y medio ambiente para pymes en Valdivia. RIOHS, matrices de riesgo, capacitaciones y visitas a terreno.">
+  <meta name="description" content="Evita multas por el DS 44. Gestión Sur — prevención de riesgos, calidad y ambiente para pymes en Valdivia. RIOHS, matrices de riesgo, capacitaciones y visitas a terreno.">
   <meta property="og:title" content="Gestión Sur | Prevención de Riesgos en Valdivia">
-  <meta property="og:description" content="Tu documentación preventiva en regla, sin tecnicismos. Gestión Sur — prevención de riesgos, calidad y medio ambiente para pymes en Valdivia, Región de Los Ríos.">
+  <meta property="og:description" content="Tu documentación preventiva en regla, sin tecnicismos. Gestión Sur — prevención de riesgos, calidad y ambiente para pymes en Valdivia, Región de Los Ríos.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80">
   <meta property="og:locale" content="es_CL">
   <meta property="og:type" content="website">
-  <link rel="icon" id="favicon" href="logogestionsur.jpeg">
+  <link rel="icon" id="favicon" href="logojaime.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -757,6 +757,7 @@
 
     /* Mobile (< 768px) */
     @media (max-width: 767px) {
+      .nav-logo img { width: 64px !important; }
       section { padding: 64px 0; }
 
       .hero { padding: 108px 0 56px; }
@@ -791,6 +792,7 @@
 
     /* Small mobile (< 480px) */
     @media (max-width: 479px) {
+      .nav-logo img { width: 54px !important; }
       .navbar     { width: calc(100% - 24px); }
       .nav-btn-text { display: none; }
       .btn.btn-sm   { padding: 10px 12px; }
@@ -855,7 +857,7 @@
     /* ── FEATURE CARDS (why-us) ── */
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       margin-top: 48px;
     }
@@ -901,11 +903,6 @@
     }
     @media (min-width: 768px) and (max-width: 1023px) {
       .features-grid { grid-template-columns: repeat(2, 1fr); }
-      .feature-card:last-child {
-        grid-column: 1 / -1;
-        max-width: 480px;
-        margin: 0 auto;
-      }
     }
 
   </style>
@@ -916,7 +913,7 @@
 <header class="navbar" id="navbar" role="banner">
   <div class="navbar-inner">
     <a href="#" class="nav-logo" aria-label="Gestión Sur — inicio">
-      Gestión <span>Sur</span>
+      <img src="logojaime.png" alt="Gestión Sur" style="display:block;background:transparent;mix-blend-mode:screen;width:80px;clip-path:inset(4px round 3px);">
     </a>
 
     <nav class="nav-links" aria-label="Navegación principal">
@@ -999,7 +996,7 @@
       </div>
       <h1>Mantén tu empresa al día y <em>evita multas</em> por incumplimiento</h1>
       <p class="hero-sub">
-        Nos encargamos de que tu documentación esté en regla. Sin tecnicismos, sin vueltas — y sin que tengas que aprender normativa.
+        Nos encargamos de que tu documentación preventiva esté al día, evitando multas por fiscalización del Trabajo o SEREMI.
       </p>
       <div class="hero-ctas">
         <a
@@ -1026,7 +1023,7 @@
         <span class="section-label reveal">Urgente</span>
         <h2 class="section-title reveal d1" id="problem-h2">La fiscalización ya no avisa</h2>
         <p class="section-body reveal d2">
-          Desde agosto de 2024 rige el DS 44, que endurece las obligaciones de prevención de riesgos. La Inspección del Trabajo y la SEREMI de Salud fiscalizan sin previo aviso y multan a las empresas que no tienen su documentación al día. La mayoría de las pymes todavía no se ha puesto al día.
+          Desde el 1 de febrero de 2025 rige el DS 44, que endurece las obligaciones de prevención de riesgos. La Inspección del Trabajo y la SEREMI de Salud fiscalizan sin previo aviso y multan a las empresas que no tienen su documentación al día. Un porcentaje importante de pymes aún no se ha puesto al día.
         </p>
       </div>
 
@@ -1140,7 +1137,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
           <h4>Decreto Supremo N°44</h4>
-          <p>Implementamos el sistema de gestión preventivo que exige el decreto: registros, procedimientos y documentación conforme a la normativa vigente desde 2024.</p>
+          <p>Implementamos el sistema de gestión preventivo que exige el decreto: registros, procedimientos y documentación conforme a la normativa vigente desde 2025.</p>
         </div>
 
         <div class="compliance-item">
@@ -1182,19 +1179,18 @@
     </div>
     <div class="segments-grid">
       <div class="segment-card reveal d1">
-        <div class="segment-num">Empresa pequeña</div>
-        <h3>Pocos trabajadores, sin nadie que se encargue de esto</h3>
-        <p>La mayoría de las pymes chicas no tiene nada en regla. Armamos lo esencial para que si llega una fiscalización, no te agarren desprevenido.</p>
+        <div class="segment-num">Empresas pequeñas</div>
+        <h3>Pocos trabajadores, precios razonables</h3>
+        <p>Nos encargamos de tu documentación para que no uses tiempo en eso y llegues limpio a cualquier fiscalización, sin multas.</p>
       </div>
       <div class="segment-card reveal d2">
-        <div class="segment-num">Empresa mediana</div>
+        <div class="segment-num">Empresas medianas</div>
         <h3>Más personal, más faenas, más riesgo de multa</h3>
         <p>Con más trabajadores el nivel de exigencia sube. Nos hacemos cargo de la gestión completa: visitas periódicas, capacitaciones y toda la documentación al día.</p>
       </div>
     </div>
     <p class="segments-note reveal d3">
-      El precio depende del tamaño y rubro de tu empresa.<br>
-      Escríbenos y te armamos una propuesta a tu medida.
+      Cotiza con nosotros: te armamos una propuesta a tu medida más una visita gratuita para saber qué falta en tu empresa.
     </p>
   </div>
 </section>
@@ -1209,7 +1205,7 @@
         <div class="stat-label">de experiencia en prevención de riesgos</div>
       </div>
       <div class="stat-item reveal d1">
-        <div class="stat-number">+40</div>
+        <div class="stat-number">+27</div>
         <div class="stat-label">empresas asesoradas en la Región de Los Ríos</div>
       </div>
       <div class="stat-item reveal d2">
@@ -1230,7 +1226,7 @@
         Más de 5 años trabajando con negocios locales en Los Ríos
       </h2>
       <p class="section-body reveal d2">
-        He realizado asesorías a distintos rubros de la región: restaurantes, empresas contratistas que trabajan para grandes compañías, y pymes locales que necesitan estar al día sin gastar de más. Cada empresa tiene sus particularidades — las conozco porque he estado ahí.
+        Hemos realizado asesorías a distintos rubros de la región: restaurantes, empresas contratistas que trabajan para grandes compañías, y pymes locales que necesitan estar al día sin gastar de más. Cada empresa tiene sus particularidades — las conocemos porque hemos estado ahí.
       </p>
     </div>
 
@@ -1241,8 +1237,8 @@
         <div class="feature-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
         </div>
-        <h3>Aquí en Valdivia</h3>
-        <p>Conocemos la realidad de las empresas de la zona y vamos a terreno. No somos una consultora de Santiago que manda plantillas por correo.</p>
+        <h3>Prevención local y directa</h3>
+        <p>Conocemos la realidad de las empresas de la zona y vamos a terreno. Trabajamos en las regiones de Los Ríos, Los Lagos y La Araucanía.</p>
       </div>
 
       <div class="feature-card reveal d2">
@@ -1253,13 +1249,7 @@
         <p>Nos escribes por WhatsApp y conversamos directo, sin call centers ni formularios. La propuesta llega ese mismo día.</p>
       </div>
 
-      <div class="feature-card reveal d3">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        </div>
-        <h3>Sin tecnicismos</h3>
-        <p>Te explicamos exactamente qué necesita tu empresa y cuánto cuesta, sin letra chica. Tú decides con información clara.</p>
-      </div>
+
 
     </div>
   </div>
@@ -1269,10 +1259,10 @@
 <section class="cta-band" aria-labelledby="cta-h2">
   <div class="container">
     <div class="cta-inner">
-      <span class="section-label reveal" style="color:var(--yellow);">Sin compromiso</span>
+      <span class="section-label reveal" style="color:var(--yellow);">Contáctanos</span>
       <h2 class="section-title reveal d1" id="cta-h2">¿Tu empresa está al día?</h2>
       <p class="reveal d2">
-        Escríbenos por WhatsApp, cuéntanos de tu empresa y te armamos una propuesta ese mismo día.
+        Cuéntanos de tu empresa y te armamos una propuesta ese mismo día, sin vueltas.
       </p>
       <a
         href="https://wa.me/56942850178?text=Hola%20Jaime%2C%20quiero%20cotizar%20la%20prevenci%C3%B3n%20de%20riesgos%20para%20mi%20empresa"
@@ -1294,8 +1284,11 @@
   <div class="container">
     <div class="footer-inner">
       <div>
-        <div class="footer-brand">Gestión <span>Sur</span> — Prevención de Riesgos, Calidad y Medio Ambiente · Valdivia, Chile</div>
-        <div class="footer-sub">Jaime González · Prev. de Riesgos, Calidad y Ambiente · <span id="yr"></span></div>
+        <div class="footer-brand">
+          <img src="logojaime.png" alt="Gestión Sur" style="display:block;background:transparent;mix-blend-mode:screen;width:70px;margin-bottom:4px;clip-path:inset(4px round 3px);">
+          Prevención de Riesgos, Calidad y Ambiente · Valdivia, Chile
+        </div>
+        <div class="footer-sub">Jaime González · Ing. en Prevención de Riesgos, Calidad y Ambiente · <span id="yr"></span></div>
         <div class="footer-credit">Diseñado por <a href="https://nvystudioss.vercel.app" target="_blank" rel="noopener noreferrer">Nvy Studios</a></div>
       </div>
       <a
@@ -1377,7 +1370,7 @@
       ctx.drawImage(img, 0, 0, img.naturalWidth, cropH, 0, 0, 64, 64);
       document.getElementById('favicon').href = canvas.toDataURL('image/png');
     };
-    img.src = 'logogestionsur.jpeg';
+    img.src = 'logojaime.png';
   })();
 </script>
 
